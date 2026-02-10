@@ -7,7 +7,8 @@
     "android": "expo start -c --android",
     "ios": "expo start -c --ios",
     "web": "expo start -c --web",
-    "clean": "rm -rf .expo node_modules"
+    "clean": "rm -rf .expo node_modules",
+    "lint": "oxlint components"
   },
   "dependencies": {
     "@react-navigation/native": "^7.0.0",
@@ -67,9 +68,12 @@
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@types/react": "~19.1.10",
+    "oxlint": "^1.46.0",
+    "oxlint-tsgolint": "^0.11.5",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",
-    "typescript": "~5.9.2"
+    "typescript": "~5.9.2",
+    "ultracite": "^7.1.5"
   },
   "private": true
 }
